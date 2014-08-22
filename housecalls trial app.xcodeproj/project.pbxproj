@@ -21,6 +21,12 @@
 		371B618519857C8500CE1BCE /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 371B616719857C8500CE1BCE /* UIKit.framework */; };
 		371B618D19857C8500CE1BCE /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 371B618B19857C8500CE1BCE /* InfoPlist.strings */; };
 		371B618F19857C8500CE1BCE /* housecalls_trial_appTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 371B618E19857C8500CE1BCE /* housecalls_trial_appTests.m */; };
+		371B619919857EAD00CE1BCE /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 371B619819857EAD00CE1BCE /* MapKit.framework */; };
+		3D27DA2D1996B22B00CCFBAA /* IntroViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D27DA2C1996B22B00CCFBAA /* IntroViewController.m */; };
+		3D31294E19969E930079372E /* 80x80.png in Resources */ = {isa = PBXBuildFile; fileRef = 3D31294D19969E930079372E /* 80x80.png */; };
+		3D31295019969E980079372E /* 120x120.png in Resources */ = {isa = PBXBuildFile; fileRef = 3D31294F19969E980079372E /* 120x120.png */; };
+		3D31295219969EA00079372E /* 58x58.png in Resources */ = {isa = PBXBuildFile; fileRef = 3D31295119969EA00079372E /* 58x58.png */; };
+		3D56EDA819A6769500186EB2 /* 80x80.png in Resources */ = {isa = PBXBuildFile; fileRef = 3D56EDA719A6769500186EB2 /* 80x80.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +59,13 @@
 		371B618A19857C8500CE1BCE /* housecalls trial appTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "housecalls trial appTests-Info.plist"; sourceTree = "<group>"; };
 		371B618C19857C8500CE1BCE /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		371B618E19857C8500CE1BCE /* housecalls_trial_appTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = housecalls_trial_appTests.m; sourceTree = "<group>"; };
+		371B619819857EAD00CE1BCE /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		3D27DA2B1996B22B00CCFBAA /* IntroViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IntroViewController.h; sourceTree = "<group>"; };
+		3D27DA2C1996B22B00CCFBAA /* IntroViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IntroViewController.m; sourceTree = "<group>"; };
+		3D31294D19969E930079372E /* 80x80.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 80x80.png; path = ../../80x80.png; sourceTree = "<group>"; };
+		3D31294F19969E980079372E /* 120x120.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 120x120.png; path = ../../120x120.png; sourceTree = "<group>"; };
+		3D31295119969EA00079372E /* 58x58.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 58x58.png; path = ../../58x58.png; sourceTree = "<group>"; };
+		3D56EDA719A6769500186EB2 /* 80x80.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 80x80.png; path = ../../80x80.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +73,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				371B619919857EAD00CE1BCE /* MapKit.framework in Frameworks */,
 				371B616619857C8500CE1BCE /* CoreGraphics.framework in Frameworks */,
 				371B616819857C8500CE1BCE /* UIKit.framework in Frameworks */,
 				371B616419857C8500CE1BCE /* Foundation.framework in Frameworks */,
@@ -101,6 +115,7 @@
 		371B616219857C8500CE1BCE /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				371B619819857EAD00CE1BCE /* MapKit.framework */,
 				371B616319857C8500CE1BCE /* Foundation.framework */,
 				371B616519857C8500CE1BCE /* CoreGraphics.framework */,
 				371B616719857C8500CE1BCE /* UIKit.framework */,
@@ -115,6 +130,8 @@
 				371B617219857C8500CE1BCE /* AppDelegate.h */,
 				371B617319857C8500CE1BCE /* AppDelegate.m */,
 				371B617519857C8500CE1BCE /* Main.storyboard */,
+				3D27DA2B1996B22B00CCFBAA /* IntroViewController.h */,
+				3D27DA2C1996B22B00CCFBAA /* IntroViewController.m */,
 				371B617819857C8500CE1BCE /* ViewController.h */,
 				371B617919857C8500CE1BCE /* ViewController.m */,
 				371B617B19857C8500CE1BCE /* Images.xcassets */,
@@ -126,6 +143,10 @@
 		371B616A19857C8500CE1BCE /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				3D56EDA719A6769500186EB2 /* 80x80.png */,
+				3D31294D19969E930079372E /* 80x80.png */,
+				3D31294F19969E980079372E /* 120x120.png */,
+				3D31295119969EA00079372E /* 58x58.png */,
 				371B616B19857C8500CE1BCE /* housecalls trial app-Info.plist */,
 				371B616C19857C8500CE1BCE /* InfoPlist.strings */,
 				371B616F19857C8500CE1BCE /* main.m */,
@@ -199,6 +220,9 @@
 				LastUpgradeCheck = 0510;
 				ORGANIZATIONNAME = "___Weissbluth Pediatrics___";
 				TargetAttributes = {
+					371B615F19857C8500CE1BCE = {
+						DevelopmentTeam = 6MCK266NH8;
+					};
 					371B618019857C8500CE1BCE = {
 						TestTargetID = 371B615F19857C8500CE1BCE;
 					};
@@ -228,8 +252,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3D31294E19969E930079372E /* 80x80.png in Resources */,
 				371B617C19857C8500CE1BCE /* Images.xcassets in Resources */,
+				3D56EDA819A6769500186EB2 /* 80x80.png in Resources */,
+				3D31295019969E980079372E /* 120x120.png in Resources */,
 				371B616E19857C8500CE1BCE /* InfoPlist.strings in Resources */,
+				3D31295219969EA00079372E /* 58x58.png in Resources */,
 				371B617719857C8500CE1BCE /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -252,6 +280,7 @@
 				371B617A19857C8500CE1BCE /* ViewController.m in Sources */,
 				371B617419857C8500CE1BCE /* AppDelegate.m in Sources */,
 				371B617019857C8500CE1BCE /* main.m in Sources */,
+				3D27DA2D1996B22B00CCFBAA /* IntroViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -317,7 +346,8 @@
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Marc Weissbluth MD SC (6MCK266NH8)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Marc Weissbluth MD SC (6MCK266NH8)";
 				COPY_PHASE_STRIP = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -355,7 +385,8 @@
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Marc Weissbluth MD SC (6MCK266NH8)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Marc Weissbluth MD SC (6MCK266NH8)";
 				COPY_PHASE_STRIP = YES;
 				ENABLE_NS_ASSERTIONS = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -376,10 +407,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "housecalls trial app/housecalls trial app-Prefix.pch";
 				INFOPLIST_FILE = "housecalls trial app/housecalls trial app-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -389,10 +423,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "housecalls trial app/housecalls trial app-Prefix.pch";
 				INFOPLIST_FILE = "housecalls trial app/housecalls trial app-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -456,6 +493,7 @@
 				371B619419857C8500CE1BCE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		371B619519857C8500CE1BCE /* Build configuration list for PBXNativeTarget "housecalls trial appTests" */ = {
 			isa = XCConfigurationList;
@@ -464,6 +502,7 @@
 				371B619719857C8500CE1BCE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -1,10 +1,125 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5023" systemVersion="13A603" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5056" systemVersion="13E28" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="Mu8-0G-Nqx">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
     </dependencies>
     <scenes>
-        <!--class Prefix:identifier View Controller-->
+        <!--Intro View Controller-->
+        <scene sceneID="Qnd-dR-41n">
+            <objects>
+                <viewController id="5zc-XI-PiZ" customClass="IntroViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="AkW-Kg-YbW"/>
+                        <viewControllerLayoutGuide type="bottom" id="uJk-74-W2J"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="center" id="ACi-cm-bRZ">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView opaque="NO" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Weissbluth_StackedLogo_330x220" translatesAutoresizingMaskIntoConstraints="NO" id="1P9-G8-BaX">
+                                <rect key="frame" x="20" y="74" width="280" height="183"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            </imageView>
+                            <button contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="Rwm-e0-xsd">
+                                <rect key="frame" x="20" y="525" width="280" height="43"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.94616788321167888" green="0.91038435218978087" blue="0.66666666666666663" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="43" id="VQW-vr-zOT"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="16"/>
+                                <color key="tintColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <inset key="contentEdgeInsets" minX="2" minY="0.0" maxX="5" maxY="0.0"/>
+                                <size key="titleShadowOffset" width="132" height="0.0"/>
+                                <state key="normal" title="Am I in Range for a WP Housecall?">
+                                    <color key="titleColor" red="1" green="0.37639318040000003" blue="0.51468287319999995" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.maskToBounds" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <segue destination="vXZ-lx-hvc" kind="push" id="pkd-h3-6J5"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="characterWrap" numberOfLines="14" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="280" translatesAutoresizingMaskIntoConstraints="NO" id="nQc-Bc-hn1">
+                                <rect key="frame" x="20" y="265" width="280" height="93"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="93" id="jJ6-bw-bs9"/>
+                                </constraints>
+                                <string key="text">Welcome parents!                                             As you are already aware, we believe very strongly in technology's ability to further personalized pediatric care in Chicago.  Housecalls are coming soon!                                                                                                                            </string>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Not part of WP?  Call today to establish your family in a  modern practice that is pushing the bounds of accessibility.  " lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="280" translatesAutoresizingMaskIntoConstraints="NO" id="YjA-dB-ONJ">
+                                <rect key="frame" x="20" y="366" width="280" height="58"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="58" id="3IL-Pl-8PM"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Already part of WP?  The yellow button below will let you know if our pediatricians can go to your home." lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="280" translatesAutoresizingMaskIntoConstraints="NO" id="eWY-Ss-uuG">
+                                <rect key="frame" x="20" y="462" width="280" height="55"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="55" id="AJN-EU-dZO"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="62n-Ej-EDk">
+                                <rect key="frame" x="20" y="432" width="280" height="22"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="22" id="mFA-EG-sBS"/>
+                                </constraints>
+                                <state key="normal" title="Our Office: 312-202-0300">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="callButton:" destination="5zc-XI-PiZ" eventType="touchUpInside" id="o6U-V7-DNR"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <accessibility key="accessibilityConfiguration">
+                            <accessibilityTraits key="traits" none="YES" button="YES"/>
+                        </accessibility>
+                        <constraints>
+                            <constraint firstItem="62n-Ej-EDk" firstAttribute="top" secondItem="YjA-dB-ONJ" secondAttribute="bottom" constant="8" symbolic="YES" id="0SA-3a-lfS"/>
+                            <constraint firstItem="62n-Ej-EDk" firstAttribute="trailing" secondItem="eWY-Ss-uuG" secondAttribute="trailing" id="10J-mv-EfX"/>
+                            <constraint firstItem="YjA-dB-ONJ" firstAttribute="trailing" secondItem="nQc-Bc-hn1" secondAttribute="trailing" id="79T-Ri-fnL"/>
+                            <constraint firstItem="YjA-dB-ONJ" firstAttribute="trailing" secondItem="62n-Ej-EDk" secondAttribute="trailing" id="B7a-nV-LSk"/>
+                            <constraint firstAttribute="bottom" secondItem="Rwm-e0-xsd" secondAttribute="bottom" id="DKK-57-4f2"/>
+                            <constraint firstItem="Rwm-e0-xsd" firstAttribute="top" secondItem="eWY-Ss-uuG" secondAttribute="bottom" constant="8" symbolic="YES" id="J3B-tK-rVt"/>
+                            <constraint firstItem="1P9-G8-BaX" firstAttribute="trailing" secondItem="nQc-Bc-hn1" secondAttribute="trailing" id="KES-4D-dKx"/>
+                            <constraint firstItem="eWY-Ss-uuG" firstAttribute="leading" secondItem="62n-Ej-EDk" secondAttribute="leading" id="O1N-dv-pi0"/>
+                            <constraint firstItem="eWY-Ss-uuG" firstAttribute="leading" secondItem="Rwm-e0-xsd" secondAttribute="leading" id="OG9-YJ-8vc"/>
+                            <constraint firstItem="eWY-Ss-uuG" firstAttribute="top" secondItem="62n-Ej-EDk" secondAttribute="bottom" constant="8" symbolic="YES" id="P9s-09-D2D"/>
+                            <constraint firstItem="1P9-G8-BaX" firstAttribute="top" secondItem="AkW-Kg-YbW" secondAttribute="bottom" constant="10" id="Vos-Tg-Lxx"/>
+                            <constraint firstItem="nQc-Bc-hn1" firstAttribute="top" secondItem="1P9-G8-BaX" secondAttribute="bottom" constant="8" symbolic="YES" id="a8c-8z-8vL"/>
+                            <constraint firstItem="nQc-Bc-hn1" firstAttribute="leading" secondItem="1P9-G8-BaX" secondAttribute="leading" id="coY-o7-tgT"/>
+                            <constraint firstItem="YjA-dB-ONJ" firstAttribute="top" secondItem="nQc-Bc-hn1" secondAttribute="bottom" constant="8" symbolic="YES" id="eeN-Ll-5ze"/>
+                            <constraint firstItem="Rwm-e0-xsd" firstAttribute="trailing" secondItem="eWY-Ss-uuG" secondAttribute="trailing" id="k3Y-lJ-lq1"/>
+                            <constraint firstItem="62n-Ej-EDk" firstAttribute="leading" secondItem="YjA-dB-ONJ" secondAttribute="leading" id="kIH-qC-Fck"/>
+                            <constraint firstItem="YjA-dB-ONJ" firstAttribute="leading" secondItem="nQc-Bc-hn1" secondAttribute="leading" id="mNr-7C-7NW"/>
+                            <constraint firstItem="1P9-G8-BaX" firstAttribute="leading" secondItem="ACi-cm-bRZ" secondAttribute="leading" constant="20" symbolic="YES" id="mmD-E9-P5x"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="sJA-rd-F6d"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Lj6-rc-ScK" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="222" y="14"/>
+        </scene>
+        <!--View Controller-->
         <scene sceneID="ufC-wZ-h7g">
             <objects>
                 <viewController id="vXZ-lx-hvc" customClass="ViewController" sceneMemberID="viewController">
@@ -15,13 +130,48 @@
                     <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" mapType="standard" showsUserLocation="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qJU-Ot-Fe0">
+                                <rect key="frame" x="0.0" y="20" width="320" height="548"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <connections>
+                                    <outlet property="delegate" destination="vXZ-lx-hvc" id="YjQ-iC-ksK"/>
+                                </connections>
+                            </mapView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
+                    <navigationItem key="navigationItem" id="Ugd-tN-vvH"/>
+                    <connections>
+                        <outlet property="mapView" destination="qJU-Ot-Fe0" id="mkj-yF-4PF"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="673" y="14"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Exs-F1-hFx">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Mu8-0G-Nqx" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="sdy-VD-I2t">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="5zc-XI-PiZ" kind="relationship" relationship="rootViewController" id="aVI-Cl-JVp"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gpv-q0-nuR" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-304" y="14"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Weissbluth_StackedLogo_330x220" width="165" height="110"/>
+    </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>
